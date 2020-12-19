@@ -313,7 +313,7 @@ const guxry = require('guxry');
 
 let engine = guxry.default();
 
-engine.get("/",A.B,C,D)
+engine.get("/",A,B,C,D)
 
 function A(req,res,ctrl){
     ctrl.next();
