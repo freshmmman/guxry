@@ -63,6 +63,7 @@ class engine {
     static(relativePath, root) {
         if (!utils.IsDirectorySync(root)) {
             console.log(`路径${root}不存在`);
+            process.exit(1);
         }
         let s = function (req, res) {
             let filepath = root + req.param("*");
